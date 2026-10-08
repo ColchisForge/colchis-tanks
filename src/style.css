@@ -1,0 +1,63 @@
+:root {
+  --bg: #07070b;
+  --px: 3px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background: var(--bg);
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#stage {
+  position: relative;
+  line-height: 0;
+  box-shadow:
+    0 0 0 2px #1b1b26,
+    0 0 40px rgba(0, 0, 0, 0.9);
+}
+
+#game {
+  display: block;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  outline: none;
+  cursor: default;
+}
+
+/* Scanlines are drawn at one line per logical pixel; --px is set from JS. */
+#crt {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0,
+      rgba(0, 0, 0, 0) calc(var(--px) * 0.5),
+      rgba(0, 0, 0, 0.16) calc(var(--px) * 0.5),
+      rgba(0, 0, 0, 0.16) var(--px)
+    ),
+    radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.35) 100%);
+}
+
+#crt.off {
+  display: none;
+}
+
+noscript {
+  color: #e8e8e8;
+  font-family: monospace;
+}
