@@ -2,10 +2,10 @@
 
 A retro-inspired top-down tank battle game built with TypeScript and HTML5 Canvas.
 
-<h2 align="center"><a href="https://USERNAME.github.io/colchis-tanks/">🎮 PLAY COLCHIS TANKS</a></h2>
+<h2 align="center"><a href="https://colchisforge.github.io/colchis-tanks/">🎮 PLAY COLCHIS TANKS</a></h2>
 
 <p align="center">
-  <strong><a href="https://USERNAME.github.io/colchis-tanks/">PLAY ONLINE</a></strong>
+  <strong><a href="https://colchisforge.github.io/colchis-tanks/">PLAY ONLINE</a></strong>
   · runs in your browser · nothing to install, no account, no download
 </p>
 
@@ -118,7 +118,7 @@ Menus work with the arrow keys and Enter, or with the mouse.
 
 ## Play Online
 
-Open **[the game](https://USERNAME.github.io/colchis-tanks/)** in any modern desktop browser. No installation is
+Open **[the game](https://colchisforge.github.io/colchis-tanks/)** in any modern desktop browser. No installation is
 required. The game is a static page served by GitHub Pages and runs entirely on your machine; there is no
 server, database or login. Settings and the high score are kept in your browser's local storage.
 
@@ -246,7 +246,7 @@ To enable it in a fresh repository named `colchis-tanks`:
 1. Push the code to the `main` branch.
 2. In **Settings → Pages**, set **Source** to **GitHub Actions**.
 3. The next push to `main` (or a manual run of *Deploy to GitHub Pages*) publishes the game at
-   `https://USERNAME.github.io/colchis-tanks/`.
+   `https://colchisforge.github.io/colchis-tanks/`.
 
 ## Roadmap
 
